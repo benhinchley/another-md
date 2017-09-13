@@ -1,0 +1,35 @@
+{
+  "name": "@benhinchley/md",
+  "version": "1.0.0",
+  "description": "markdown tagged template literal",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --no-semi --single-quote --write \"{index,test}.js\" && standard --fix",
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && tap test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benhinchley/another-md.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Benjamin Hinchley <benjaminhinchley@gmail.com>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/benhinchley/another-md/issues"
+  },
+  "homepage": "https://github.com/benhinchley/another-md#readme",
+  "dependencies": {
+    "commonmark": "^0.28.1"
+  },
+  "devDependencies": {
+    "assert-html": "^1.1.5",
+    "bel": "^5.1.1",
+    "dependency-check": "^2.9.1",
+    "prettier": "^1.6.1",
+    "standard": "^10.0.3",
+    "tap": "^10.7.2"
+  }
+}
